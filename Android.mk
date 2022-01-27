@@ -133,4 +133,13 @@ LOCAL_MODULE_PATH := $(TARGET_OUT_FAKE)
 LOCAL_REQUIRED_MODULES := $(MITHORIUM_PRODUCT_PACKAGES)
 include $(BUILD_PHONY_PACKAGE)
 
+EGL_SYMLINKS := $(TARGET_OUT_VENDOR)/lib/libGLESv2_adreno.so \
+    $(TARGET_OUT_VENDOR)/lib/libEGL_adreno.so \
+    $(TARGET_OUT_VENDOR)/lib64/libEGL_adreno.so
+$(EGL_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@mkdir -p $(dir $@)
+	$(hide) ln -sf egl/$(notdir $@) $@
+
+ALL_DEFAULT_INSTALLED_MODULES += $(EGL_SYMLINKS)
+
 endif
