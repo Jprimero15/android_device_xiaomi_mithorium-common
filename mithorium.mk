@@ -170,8 +170,8 @@ MITHORIUM_PRODUCT_PACKAGES += \
 endif
 
 # Device-specific Settings
-MITHORIUM_PRODUCT_PACKAGES += \
-    XiaomiParts
+#MITHORIUM_PRODUCT_PACKAGES += \
+#    XiaomiParts
 
 # Display
 ifeq ($(TARGET_KERNEL_VERSION),4.19)
@@ -291,8 +291,8 @@ MITHORIUM_PRODUCT_PACKAGES += \
     android.hardware.lights-service.xiaomi_mithorium
 
 # LiveDisplay
-MITHORIUM_PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
+#MITHORIUM_PRODUCT_PACKAGES += \
+#    vendor.lineage.livedisplay@2.0-service-sdm
 
 # Media
 ifeq ($(TARGET_BOARD_PLATFORM),msm8953)
@@ -452,8 +452,8 @@ MITHORIUM_PRODUCT_PACKAGES += \
 endif
 
 # Trust HAL
-MITHORIUM_PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
+#MITHORIUM_PRODUCT_PACKAGES += \
+#    vendor.lineage.trust@1.0-service
 
 # USB HAL
 MITHORIUM_PRODUCT_PACKAGES += \
