@@ -170,8 +170,8 @@ MITHORIUM_PRODUCT_PACKAGES += \
 endif
 
 # Device-specific Settings
-#MITHORIUM_PRODUCT_PACKAGES += \
-#    XiaomiParts
+MITHORIUM_PRODUCT_PACKAGES += \
+    XiaomiParts
 
 # Display
 ifeq ($(TARGET_KERNEL_VERSION),4.19)
