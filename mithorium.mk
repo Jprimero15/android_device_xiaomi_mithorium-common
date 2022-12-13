@@ -22,7 +22,7 @@ endif
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-xtended
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
@@ -450,10 +450,6 @@ ifneq ($(TARGET_KERNEL_VERSION),4.19)
 MITHORIUM_PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti.xiaomi_mithorium
 endif
-
-# Trust HAL
-MITHORIUM_PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
 
 # USB HAL
 MITHORIUM_PRODUCT_PACKAGES += \
