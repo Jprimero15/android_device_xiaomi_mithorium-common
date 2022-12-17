@@ -7,6 +7,9 @@
 # Userspace Reboot
 $(call inherit-product, $(SRC_TARGET_DIR)/product/userspace_reboot.mk)
 
+# IPA Legacy
+$(call inherit-product, vendor/qcom/opensource/data-ipa-cfg-mgr-legacy/ipacm_vendor_product.mk)
+
 # Kernel
 TARGET_KERNEL_VERSION ?= 4.9
 
@@ -274,6 +277,9 @@ PRODUCT_COPY_FILES += \
 MITHORIUM_PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
+
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/qcom/opensource/data-ipa-cfg-mgr-legacy
 
 # Keymaster HAL
 ifneq ($(TARGET_USES_DEVICE_SPECIFIC_KEYMASTER),true)
