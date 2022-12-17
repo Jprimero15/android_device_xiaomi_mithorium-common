@@ -383,7 +383,7 @@ TARGET_COMMON_QTI_COMPONENTS := bt
 # Ramdisk
 MITHORIUM_PRODUCT_PACKAGES += \
     init.qcom.rc \
-    init.qcom.usb.rc \
+    init.olive.usb.rc \
     init.recovery.qcom.rc \
     init.target.rc \
     init.xiaomi.rc \
