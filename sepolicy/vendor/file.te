@@ -17,3 +17,6 @@ type rild_file, file_type, vendor_file_type;
 
 # Rmt
 type debugfs_rmt, debugfs_type, fs_type;
+
+#QSPM
+type hal_qspmhal_default_exec, file_type, data_file_type;
