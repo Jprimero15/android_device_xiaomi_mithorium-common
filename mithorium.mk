@@ -336,6 +336,7 @@ PRODUCT_COPY_FILES += \
 
 # QTI Components
 TARGET_COMMON_QTI_COMPONENTS += \
+    av \
     bt \
     gps \
     perf \
