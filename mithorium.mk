@@ -384,6 +384,7 @@ MITHORIUM_PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
+    vendor/qcom/opensource/display \
     $(LOCAL_PATH)
 
 # Thermal
